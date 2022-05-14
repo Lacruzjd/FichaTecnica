@@ -20,8 +20,12 @@ class FichaTecnica {
 
   addMercaderiaComprarItem(){
     for (let index = 0; index < this.items.length; index++) {
-    let compras = this.items[index].cantidadBruta / this.items[index].cantidadNeta;
-    this.items.push(compras);
+      if(this.items[index].cantidad >0){
+        let compras = this.items[index].cantidadBruta / this.items[index].cantidadNeta;
+        this.items.push(compras);
+      } else {
+        console.log("Agregar Precio del ingrediente");
+      }
     }
   }
 
