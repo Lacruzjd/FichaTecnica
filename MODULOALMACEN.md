@@ -23,10 +23,15 @@ Entrada y salida de productos.
 
 Feature: Creacion de categoria y asociacion de ingrediente.
 
-	Scenario: Crear categoria.
-		Given: categoria no existe
-		When crear categoria		
-		Then crea categoria 
+Scenario: Crear nueva categoria.
+		Given: categoria nueva con nombre valido
+		When se crea la categoria		
+		Then se muestra la categoria fue creada 
+
+	Scenario: Listar Categorias.
+		Given Categorias creadas
+		When se solicita listar
+		Then se muesta listado de categorias
 
 	Scenario: Asociar y agregar deficicnion del ingrediente a categoria.
 		Given: categoria existe
