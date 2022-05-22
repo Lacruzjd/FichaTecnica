@@ -23,7 +23,7 @@ Entrada y salida de productos.
 
 Feature: Creacion de categoria y asociacion de ingrediente.
 
-Scenario: Crear nueva categoria.
+	Scenario: Crear nueva categoria.
 		Given: categoria nueva con nombre valido
 		When se crea la categoria		
 		Then se muestra la categoria fue creada 
