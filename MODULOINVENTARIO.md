@@ -113,17 +113,19 @@ Feature: Eliminar definicion insumo.
 		Them se muestra insumo eliminado.
 
 
-Feature: Agregar insumo
+Feature: Agregar insumos
 
-	Scenario: Agregar insumo 
+	Scenario: Agregar cantidad del insumo 
 		Given: esta definido el insumo 
-		When se agrega el insumo 
-		Then se muestra insumo agregado y cantidad total.
+		When se agrega la cantidad del insumo 
+		Then se suma la cantiad del insumo al total existente
+		and se muestra cantidad agregada y el total actual.
 
-Feature: Restar insumo
+Feature: Restar insumos
 
-	Scenario: Restar insumo 
+	Scenario: Restar cantidad del insumo 
 		Given: esta disponible el insumo 
-		and es menor o igual a la cantidad a restar
-		When se resta el insumo 
-		Then se muestra insumo extraido y cantidad total.
+		and el total es menor o igual a la cantidad a restar
+		When se resta la cantidad del insumo
+		Then se resta la cantiad del total existente
+		and se muestra cantidad del insumo extraido y el total actual.
