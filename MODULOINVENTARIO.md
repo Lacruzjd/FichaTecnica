@@ -117,7 +117,6 @@ Feature: Agregar insumo
 
 	Scenario: Agregar insumo 
 		Given: esta definido el insumo 
-		and insumo valido
 		When se agrega el insumo 
 		Then se muestra insumo agregado y cantidad total.
 
