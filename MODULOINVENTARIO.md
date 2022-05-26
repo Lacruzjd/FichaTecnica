@@ -22,7 +22,7 @@
 	Hay utilitarios: "no aplica por ahora".
 
 
-1.1.- Gherkin: 
+### Gherkin: 
 
 Feature: Definir de categoria.
 
