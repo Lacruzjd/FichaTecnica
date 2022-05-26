@@ -1,10 +1,11 @@
-MODULO INVENTARIO:
-Entrada y salida de productos.
+# MODULO INVENTARIO:
+
+## Entrada y salida de productos.
 
 1.- Definir productos:
  
 	Categorias: Aceites y Materias Grasas.
-				Productos Lacteos.
+				Productos Lacteos => subcategorias: leche quesos
 				Legumbres.
 				Setas/Hongos.
 				Verduras.
@@ -59,70 +60,67 @@ Feature: Eliminar categoria.
 		When se elimina la categoria 
 		Them se muestra categoria eliminada.
 
-Feature: Definir insumo.
+Feature: Definir subcategoria.
 
 	Background:
 		Given: Seccion iniciada por el usuario.
 
-	Scenario: Definir nuevo insumo.
-		Given: insumo nuevo con nombre y caracteristicas validas.
-		When se define el insumo		
-		Then se muestra el insumo definido
+	Scenario: Definir nueva subcategoria.
+		Given: Subcategoria nueva con nombre y caracteristicas validas.
+		When se define la subcategoria		
+		Then se muestra la subcategoria definida
 		
-Feature: Asociar deficion del insumo a categoria.
+Feature: Asociar subcategoria a categoria.
 
 	Background:
 		Given: Seccion iniciada por el usuario.
 
-	Scenario: Asociar el insumo a categoria.
-		Given: insumo creado
+	Scenario: Asociar subcategoria a categoria.
+		Given: subcategoria creada
 		And categoria existente.
 		When se seleciona la categoria
-		and se agrega el insumo
-		Then se muestra insumo asociado a categoria
+		and se agrega la subcategoria
+		Then se muestra subcategoria asociada a categoria
 
-Feature: Listar definicion del insumo.
+Feature: Listar subcategorias.
 
 	Background:
 		Given: Seccion iniciada por el usuario.
 
-	Scenario: Listar insumos.
-		Given insumo existe
+	Scenario: Listar subcategorias.
+		Given subcategorias existe
 		When se solicita listar
-		Then se muesta listado de ingredeintes con categorias y demas caracteristicas.
+		Then se muesta listado de subcategorias con categorias y demas caracteristicas.
 
-Feature: Actualizar definicion insumo.
-
-	Background:
-		Given: Seccion iniciada por el usuario.
-
-	Scenario: Actualizar insumo. 
-		Given: existe insumo
-		When se actualzia el insumo 
-		Them se muestra insumo actualizado.
-
-Feature: Eliminar definicion insumo.
+Feature: Actualizar definicion subcategorias.
 
 	Background:
 		Given: Seccion iniciada por el usuario.
 
-	Scenario: Eliminar definicion del insumo. 
-		Given: existe insumo
-		And cantidad inexistente
-		When se elimina el insumo 
-		Them se muestra insumo eliminado.
+	Scenario: Actualizar subcategoria. 
+		Given: existe subcategoria
+		When se actualzia el subcategoria 
+		Them se muestra subcategoria actualizada.
 
+Feature: Eliminar subcategoria.
+
+	Background:
+		Given: Seccion iniciada por el usuario.
+
+	Scenario: Eliminar subcategoria. 
+		Given: existe subcategoria
+		When se elimina el subcategoria 
+		Them se muestra subcategoria eliminado.
 
 Feature: Agregar insumos
 
-	Scenario: Agregar cantidad del insumo 
-		Given: esta definido el insumo 
-		When se agrega la cantidad del insumo 
-		Then se suma la cantiad del insumo al total existente
-		and se muestra cantidad agregada y el total actual.
+	Scenario: Agregar nuevo insumo 
+		Given: esta definido el insumo
+		and creda la sucategoria
+		When se crea y guarda el insumo
+		Then se muesta insumo agregado.
 
 Feature: Restar insumos
-
 	Scenario: Restar cantidad del insumo 
 		Given: esta disponible el insumo 
 		and el total es menor o igual a la cantidad a restar
