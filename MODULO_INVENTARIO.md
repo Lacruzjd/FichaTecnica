@@ -12,24 +12,6 @@ Definicion de Niveles de usuarios:
 				Agrega, resta y modifica elementos del inventario.  
 
 	Obrador:	Agrega y resta elementos del inventario.
- 
-	Ingredientes:
-
-		Subcategorias: Aceites y Materias Grasas.
-				Productos Lacteos => subcategorias: leche quesos
-				Legumbres.
-				Setas/Hongos.
-				Verduras.
-				Frutas.
-				Cereales, harinas y masas.
-				Pescado.
-				Mariscos.
-				Carnes => por animal, aves de corral, caza. 
-				Bebidas => alcoholicas y no alcoholicas.
-				utilitarios.
-	
-	
-	Utilitarios: 
 
 Definicion de Categorias de insumos:
  
