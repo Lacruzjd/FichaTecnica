@@ -192,7 +192,7 @@ Feature: Restar ingrediente
 		Then se resta la cantiad del total existente
 		and se muestra cantidad del ingrediente extraido y el total actual.
 
-		Feature: Agregar utilitario
+Feature: Agregar utilitario
 
 	Background:
 		Given: Seccion iniciada por el administrador, encargado o usuario.
