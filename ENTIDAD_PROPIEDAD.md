@@ -95,7 +95,7 @@ definirlo, esta asociado a una categoria y subcategoria.
 
 Utilitario: 
 Elemento que se agregara al inventario, da las pautas para 
-definirlo, esta asociado a una categoria y subcategoria.
+definirlo, esta asociado a una categoria.
 
     Entidad: Utilitario
 
