@@ -1,5 +1,19 @@
 # Inventario entidades y propiedades
 
+Entidad: Administrador
+Usuario crado por el sistema con facultades globales.
+  
+    Propiedades:
+    nombre de usuario: texto
+    contrasena: texto
+    nombre: texto 
+    Apellido: texto
+    documento: numeros
+    email: texto 
+    telefono: numeros
+    facultades: array de Facultades globales
+    fecha de creacion: Date  
+
 Entidad: Facultades
 Acciones definidas en el sistema para ser ejecutadas
 por los usuarios creados por el administrador
@@ -9,21 +23,6 @@ por los usuarios creados por el administrador
     nombre: texto 
     operaciones: array de facultades en el sistema
     fecha de creacion: Date 
-
-
-Entidad: Administrador
-Usuario crado por el sistema con facultades globales.
-  
-    Propiedades:
-    id: texto
-    nombre: texto 
-    Apellido: texto
-    documento: numeros
-    email: texto 
-    telefono: numeros
-    facultades: array de Facultades globales
-    fecha de creacion: Date 
-
 
 Entidad: Nivel
 Son craedos por el administrador, da facultades de ciertas operaciones definidas en el sistema, 
@@ -38,9 +37,10 @@ Entidad: Usuario
 Son craedos por el administrador y asigna facultades de ciertas operaciones definidas en el sistema.
        
     Propiedades:
-    id: texto
+    contrasena: texto
+    nombre de usuario: texto
     nombre: texto 
-    Apellido: texto
+    apellido: texto
     documento: numeros
     email: texto 
     telefono: numeros

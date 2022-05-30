@@ -47,6 +47,16 @@ Feature: Usuarios.
 		When se define el nivel y facultades
 		Then se muestra nivel creado
 
+	Scenario: modificar nivel. 
+		Given: Facultades definidas en el sistema
+		When se modifica el nivel
+		Then se muestra nivel modificado
+
+	Scenario: eliminar nivel. 
+		Given: Facultades definidas en el sistema
+		When se elimina el nivel y facultades
+		Then se muestra nivel eliminado
+
 	Scenario: Crear usuario.
 		Given: nivel de usuario definido
 		When se define el usuario y asigna nivel
@@ -61,7 +71,6 @@ Feature: Usuarios.
 		Given: Usuario creado
 		When se alimina el usuario
 		Then se muestra datos del usuario eliminado
-
 
 Feature: Definir de categoria.
 
