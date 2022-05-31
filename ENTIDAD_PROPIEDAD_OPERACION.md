@@ -62,6 +62,13 @@ es creada por el usuario facultado y logeado en el sistema.
     creador: Usuario
     fecha de creacion: Date 
 
+    Operaciones:
+    crear 
+    actualizar (debe exitistir y estar seleccionada al categoria a actualizar)
+    eliminar (debe exitistir y estar seleccionada al categoria a eliminar)
+    listar (debe existir por menos una de lo contrario muestra lista vacia y la operacion crear)
+
+
 Subcategoria:
 Deficnion de subcategoria, asignado a categoria la cual debe existir,
 es creado por un usario logeado en el sistema, contendra los insumos.
@@ -75,6 +82,12 @@ es creado por un usario logeado en el sistema, contendra los insumos.
     insumos: array de insumos
     creador: usuario
     fecha de creacion: Date 
+
+    Operaciones:
+    crear/asociar (se crea la subcategoria y se asocia a la categoria la cual debe existir de lo contario muestra operacion agregar de categoria)
+    actualizar (debe exitistir y estar seleccionada al categoria a actualizar)
+    eliminar (debe exitistir y estar seleccionada al categoria a eliminar)
+    listar (debe existir por menos una de lo contrario muestra lista vacia y la operacion crear)
 
 Ingrediente: 
 Elemento que se agregara al inventario, da las pautas para 
@@ -90,8 +103,16 @@ definirlo, esta asociado a una categoria y subcategoria.
     marca: texto 
     lote: texto 
     fecha de vencimiento: Date 
+    precio: numero
     encargado: usuario
     fecha de ingreso: Date
+
+    Operaciones:
+    crear/asociar (debe estar creado, se selecciona la subcatergoria y se asocia, de lo contrario se muestra la operacion crear/asociar de subcategoria)
+    actualizar (debe exitistir)
+    eliminar (debe exitistir)
+    listar (debe existir por menos una de lo contrario muestra lista vacia y la operacion crear)
+
 
 Utilitario: 
 Elemento que se agregara al inventario, da las pautas para 
@@ -106,8 +127,15 @@ definirlo, esta asociado a una categoria.
     marca: texto 
     lote: texto 
     fecha de vencimiento: Date 
+    precio: numero
     encargado: usuario
     fecha de ingreso: Date
+
+    Operaciones:
+    crear/asociar (debe estar creado, se selecciona la categoria  y se asocia, de lo contrario se muestra la operacion crear/asociar de categoria)
+    actualizar (debe exitistir)
+    eliminar (debe exitistir)
+    listar (debe existir por menos una de lo contrario muestra lista vacia y la operacion crear)
 
 
 
